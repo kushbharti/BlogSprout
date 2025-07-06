@@ -13,31 +13,25 @@
 - 🎨 Responsive Tailwind-styled UI
 
 
-🔓 Login Page
-![Screenshot 2025-07-06 180059](https://github.com/user-attachments/assets/de657eb8-c63f-4a97-bf07-f601c89b1fdc) <br>
+<h1>🔓 Login Page</h1>
+![Screenshot 2025-07-06 180059](https://github.com/user-attachments/assets/6263d707-e992-4994-b6e2-e43af08257ad) <br>
 
-🧾 Register Page
-![Screenshot 2025-07-06 180115](https://github.com/user-attachments/assets/d05db98e-f6c1-490e-81a7-247542c38496)<br>
+<h1>🧾 Register Page</h1>
+![Screenshot 2025-07-06 180115](https://github.com/user-attachments/assets/e5b6de38-491c-415d-ae44-c4109f7d4a7f)<br>
 
+<h1>🏠 Home Page (All Posts)</h1>
+![Screenshot 2025-07-06 180358](https://github.com/user-attachments/assets/a323ed52-d5b6-43c6-9930-e5d1d2f19b8c)<br>
 
-🏠 Home Page (All Posts)
+<h1>👤 My Posts</h1>
+![Screenshot 2025-07-06 180530](https://github.com/user-attachments/assets/1da6f51b-baf6-4c54-b55f-3854127ca2ef)<br>
 
-![Screenshot 2025-07-06 180358](https://github.com/user-attachments/assets/6bcb8984-ae25-484a-8d63-322a4645aa08)<br>
+<h1>✍️ Create Blog Post</h1>
+![Screenshot 2025-07-06 180305](https://github.com/user-attachments/assets/acd9a4ea-d39f-4879-a6a5-b6e37ce49ae1)<br>
 
-👤 My Posts
+<h1>🛠️ Update Blog Post</h1>
+![Screenshot 2025-07-06 180516](https://github.com/user-attachments/assets/37c2197a-e233-49f0-b96a-a44b4084ac95)<br>
 
-![Screenshot 2025-07-06 180448](https://github.com/user-attachments/assets/a5585f2e-7577-4f22-97ac-6dc6d7e9b5ec)<br>
-
-✍️ Create Blog Post
-
-![Screenshot 2025-07-06 180305](https://github.com/user-attachments/assets/4f7fd813-6e46-497c-844e-3523ee644391)<br>
-
-### 🛠️ Update Blog Post
-
-![Screenshot 2025-07-06 180516](https://github.com/user-attachments/assets/4da10411-95ad-4e5a-8145-0a816ccb6979)<br>
-
-
-📁 Project Structure
+<h1>📁 Project Structure</h1>
 
 MultiUser_Blog_Page/
 │
@@ -86,22 +80,22 @@ MultiUser_Blog_Page/
 
 
 
-🐍 Create & Activate Virtual Environment
+<h1>🐍 Create & Activate Virtual Environment</h1>
 python -m venv env
 source env/bin/activate  # For macOS/Linux
 .\env\Scripts\activate   # For Windows
 
-📦 Install Dependencies
+<h1>📦 Install Dependencies </h1>
 pip install -r requirements.txt
 
-⚙️ Run Migrations
+<h1>⚙️ Run Migrations</h1>
 python manage.py makemigrations
 python manage.py migrate
 
-▶️ Run the Server
+<h1>▶️ Run the Server</h1>
 python manage.py runserver
 
-👤 Create Superuser (Optional)
+<h1>👤 Create Superuser (Optional)</h1>
 python manage.py createsuperuser
 
 
