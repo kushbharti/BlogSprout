@@ -39,48 +39,48 @@
 
 <h1>📁 Project Structure</h1>
 
-MultiUser_Blog_Page/      <br>
+MultiUser_Blog_Page/     
 │
-├── BlogApp/                  <br>   
-│   ├── migrations/          <br>
-│   ├── __init__.py          <br>
-│   ├── admin.py            <br>
-│   ├── apps.py            <br>
-│   ├── forms.py          <br>
-│   ├── models.py        <br>
-│   ├── tests.py        <br>
-│   ├── urls.py          <br>
-│   └── views.py        <br>
+├── BlogApp/                     
+│   ├── migrations/         
+│   ├── __init__.py         
+│   ├── admin.py            
+│   ├── apps.py          
+│   ├── forms.py          
+│   ├── models.py     
+│   ├── tests.py        
+│   ├── urls.py          
+│   └── views.py        
 │
-├── media/        <br>               
-│   └── pictures/      <br>
+├── media/                   
+│   └── pictures/      
 │
-├── static/                <br>      
-│   └── styles/             <br>
-│       ├── blog.css        <br>
-│       ├── login.css      <br>
-│       └── register.css    <br>
+├── static/                  
+│   └── styles/
+│       ├── blog.css       
+│       ├── login.css     
+│       └── register.css    
 │
-├── templates/             <br>       
-│   ├── base.html      <br>
-│   ├── login.html     <br>
-│   ├── register.html     <br>
-│   ├── create_blog.html    <br>
-│   ├── blog_user_post.html    <br>
-│   ├── update_post.html      <br>
-│   └── home.html   <br>
+├── templates/                
+│   ├── base.html      
+│   ├── login.html    
+│   ├── register.html   
+│   ├── create_blog.html  
+│   ├── blog_user_post.html   
+│   ├── update_post.html      
+│   └── home.html
 │
-├── MultiUser_Blog_Page/  <br>         
-│   ├── __init__.py      <br>
-│   ├── asgi.py      <br>
-│   ├── settings.py    <br>
-│   ├── urls.py   <br>
-│   └── wsgi.py <br>
+├── MultiUser_Blog_Page/         
+│   ├── __init__.py      
+│   ├── asgi.py      
+│   ├── settings.py    
+│   ├── urls.py  
+│   └── wsgi.py
 │
-├── db.sqlite3   <br>
-├── manage.py  <br>
-├── requirements.txt  <br>
-└── README.md  <br>
+├── db.sqlite3   
+├── manage.py  
+├── requirements.txt  
+└── README.md 
 
 
 
