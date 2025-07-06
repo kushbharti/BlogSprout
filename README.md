@@ -39,50 +39,48 @@
 
 <h1>📁 Project Structure</h1>
 
-MultiUser_Blog_Page/          <br>
-│                                         
-├── BlogApp/                       # Django app for blog logic   <br>
-│   ├── migrations/
-│   ├── __init__.py                <br>
-│   ├── admin.py                  <br>
-│   ├── apps.py                   <br>
-│   ├── forms.py                  # Django forms (BlogForm)
-│   ├── models.py                 # Blogpost model
-│   ├── tests.py
-│   ├── urls.py                   # App-level routing
-│   ├── views.py                  # View functions
-│   └── templates/
-│       └── BlogApp/
-│           ├── create_blog.html
-│           ├── blog_user_post.html
-│           ├── update_post.html
-│           └── home.html
+MultiUser_Blog_Page/      <br>
 │
-├── media/                        # Uploaded blog images
-│   └── pictures/
+├── BlogApp/                  <br>   
+│   ├── migrations/          <br>
+│   ├── __init__.py          <br>
+│   ├── admin.py            <br>
+│   ├── apps.py            <br>
+│   ├── forms.py          <br>
+│   ├── models.py        <br>
+│   ├── tests.py        <br>
+│   ├── urls.py          <br>
+│   └── views.py        <br>
 │
-├── static/                       # Static files (CSS, JS)
-│   └── styles/
-│       ├── blog.css
-│       ├── login.css
-│       └── register.css
+├── media/        <br>               
+│   └── pictures/      <br>
 │
-├── templates/                    # Global shared templates
-│   ├── base.html
-│   ├── login.html
-│   └── register.html
+├── static/                <br>      
+│   └── styles/             <br>
+│       ├── blog.css        <br>
+│       ├── login.css      <br>
+│       └── register.css    <br>
 │
-├── MultiUser_Blog_Page/          # Project configuration
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py                   # Root URLs (includes BlogApp)
-│   └── wsgi.py
+├── templates/             <br>       
+│   ├── base.html      <br>
+│   ├── login.html     <br>
+│   ├── register.html     <br>
+│   ├── create_blog.html    <br>
+│   ├── blog_user_post.html    <br>
+│   ├── update_post.html      <br>
+│   └── home.html   <br>
 │
-├── db.sqlite3                    # SQLite database
-├── manage.py                     # Django CLI entry
-├── requirements.txt              # Python package list
-└── README.md                     # Project documentation
+├── MultiUser_Blog_Page/  <br>         
+│   ├── __init__.py      <br>
+│   ├── asgi.py      <br>
+│   ├── settings.py    <br>
+│   ├── urls.py   <br>
+│   └── wsgi.py <br>
+│
+├── db.sqlite3   <br>
+├── manage.py  <br>
+├── requirements.txt  <br>
+└── README.md  <br>
 
 
 
