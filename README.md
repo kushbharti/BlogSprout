@@ -12,24 +12,6 @@
 - 📌 Slug-based unique URLs for SEO
 - 🎨 Responsive Tailwind-styled UI
 
-<h3>🐍 Create & Activate Virtual Environment</h3>
-python -m venv env  <br>
-source env/bin/activate  # For macOS/Linux <br>
-.\env\Scripts\activate   # For Windows    <br>
-
-<h3>📦 Install Dependencies </h3>
-pip install -r requirements.txt
-
-<h3>⚙️ Run Migrations</h3>
-python manage.py makemigrations
-python manage.py migrate
-
-<h3>▶️ Run the Server</h3>
-python manage.py runserver
-
-<h3>👤 Create Superuser (Optional)</h3>
-python manage.py createsuperuser
-
 
 <h3>🔓 Login Page</h3>
 
@@ -54,6 +36,24 @@ python manage.py createsuperuser
 <h3>🛠️ Update Blog Post</h3>
 
 ![Screenshot 2025-07-06 180516](https://github.com/user-attachments/assets/37c2197a-e233-49f0-b96a-a44b4084ac95)<br>
+
+<h3>🐍 Create & Activate Virtual Environment</h3>
+python -m venv env  <br>
+source env/bin/activate  # For macOS/Linux <br>
+.\env\Scripts\activate   # For Windows    <br>
+
+<h3>📦 Install Dependencies </h3>
+pip install -r requirements.txt
+
+<h3>⚙️ Run Migrations</h3>
+python manage.py makemigrations
+python manage.py migrate
+
+<h3>▶️ Run the Server</h3>
+python manage.py runserver
+
+<h3>👤 Create Superuser (Optional)</h3>
+python manage.py createsuperuser
 
 <h1>📁 Project Structure</h1>
 
