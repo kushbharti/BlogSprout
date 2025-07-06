@@ -5,15 +5,15 @@
 
 <h1>🚀 Features</h1>
 <b>
-🔐 User Authentication – Secure registration, login, and logout system. <br>
-✍️ Full Blog CRUD – Create, edit, and delete your own blog posts.   <br>
-🖼️ Image Uploads – Add images to blog posts with media storage support.  <br>
-🧑‍🤝‍🧑 User Dashboard – See only your posts on a personal dashboard.   <br>
-📅 Timestamps – Posts include auto-generated creation dates.   <br>
-📌 SEO-Friendly Slugs – Clean and unique URLs using slugs.    <br>
-🎨 Responsive Design – Beautiful layout powered by Tailwind CSS.   <br>
-🔄 Dynamic Rendering – Posts update and render dynamically.      <br>
-🔒 Access Control – Only authors can edit or delete their posts.   <br>
+  
+🔐 User registration and login
+✍️ Create, update, delete blog posts
+🖼️ Upload images to posts
+🧑‍🤝‍🧑 User-specific post dashboard
+📅 Auto-generated timestamps
+📌 Slug-based unique URLs for SEO
+🎨 Responsive Tailwind-styled UI
+
 </b>
 
 <h3>🔓 Login Page</h3>
