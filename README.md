@@ -13,7 +13,8 @@
 - 🎨 Responsive Tailwind-styled UI
 
 
-#🔓 Login Page
+<h1>🔓 Login Page</h1>
+
 ![Screenshot 2025-07-06 180059](https://github.com/user-attachments/assets/6263d707-e992-4994-b6e2-e43af08257ad) <br>
 
 #🧾 Register Page
