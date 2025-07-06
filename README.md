@@ -87,10 +87,10 @@ MultiUser_Blog_Page/
 
 
 <h3>🐍 Create & Activate Virtual Environment</h3>
-<h5>python -m venv env  <br>
+<br>
+python -m venv env  <br>
 source env/bin/activate  # For macOS/Linux <br>
 .\env\Scripts\activate   # For Windows    <br>
-</h5>
 
 <h3>📦 Install Dependencies </h3>
 pip install -r requirements.txt
