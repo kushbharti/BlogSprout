@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from .models import Blogpost
 from .forms import BlogForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 # Create your views here.
 
@@ -43,3 +44,7 @@ def update_post(request,slug_post):
     else:
         form = BlogForm(instance=post)
     return render(request,'update_post.html',{'form':form,'post':post})
+
+def logout_blog_page(request):
+    logout(request)
+    return redirect('login')
