@@ -5,129 +5,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Blog Hub</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
+
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="{% static 'styles/blog.css' %}" />
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col bg-gray-900 text-gray-200">
     <!-- Header -->
     <header
-      class="bg-white shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50 rounded-b-lg"
+      class="bg-gray-800 shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50 rounded-b-lg"
     >
-      <div class="text-2xl font-bold text-gray-800">My Blog Hub</div>
+      <div class="text-2xl font-bold text-white">My Blog Hub</div>
       <nav class="nav-links flex space-x-6">
-        <!-- All Posts link - clicking will display all posts -->
         <a
           href="{% url 'home' %}"
-          class="text-blue-600 font-medium transition duration-200"
+          class="text-blue-400 font-medium transition duration-200 hover:text-white"
           >All Posts</a
         >
-        <!-- My Posts link - clicking will display my posts (active by default) -->
         <a
           href="{% url 'user_posts' %}"
-          class="text-gray-600 hover:text-blue-600 font-medium transition duration-200"
+          class="text-gray-300 hover:text-white font-medium transition duration-200"
           >My Posts</a
         >
       </nav>
       <div class="hamburger-menu md:hidden">
-        <i class="fas fa-bars text-xl text-gray-700"></i>
+        <i class="fas fa-bars text-xl text-gray-200"></i>
       </div>
     </header>
 
     <main class="flex-grow container mx-auto px-4 py-8">
-      <!-- Search Bar -->
-      <div class="mb-8 flex justify-center">
-        <div class="relative w-full max-w-xl">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search posts by title or author..."
-            class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200"
-          />
-          <div
-            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-          >
-            <i class="fas fa-search text-gray-400"></i>
-          </div>
-        </div>
-      </div>
-
-     
-
-      <!-- Content Sections -->
+      <!-- Content Section -->
       <section id="all-posts-section" class="post-section mb-12">
-        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-8 text-white">
           Explore All Posts
         </h2>
-         {% if all_blogs %} 
-       
+        {% if all_blogs %}
         <div
           id="allPostsContainer"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-         {% for all_blog in all_blogs %}
-          <!-- Static All Posts (visible by default) -->
+          {% for all_blog in all_blogs %}
           <div
-            class="post-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+            class="post-card bg-gray-800 rounded-xl shadow-md overflow-hidden flex flex-col"
           >
-          {% if all_blog.images %}
-          
+            {% if all_blog.images %}
             <img
-              src=" {{all_blog.images.url }} "
-              alt="The Future of AI in Everyday Life"
+              src="{{ all_blog.images.url }}"
+              alt="{{ all_blog.title }}"
               class="w-full h-56 object-cover object-center rounded-t-xl"
             />
-
             {% else %}
-               <img
+            <img
               src="https://placehold.co/400x250/667eea/ffffff?text={{all_blog.title|truncatewords:3}}"
-              alt="The Future of AI in Everyday Life"
+              alt="{{ all_blog.title }}"
               class="w-full h-48 object-cover"
             />
             {% endif %}
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-xl font-semibold mb-2 text-gray-900">
-                {{all_blog.title}}
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                {{ all_blog.title }}
               </h3>
-              <p class="text-sm text-gray-600 mb-3">
-                By <span class="font-medium">{{all_blog.author}}</span>
-                on {{ all_blog.created_day | date:'d M, Y'}}
-              </p>
-              <p class="text-gray-700 text-base mb-4 flex-grow">
-                {{all_blog.content}}
-              </p>
-              <div
-                class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100"
-              >
-                <span class="text-gray-500 text-sm"
-                  ><i class="fas fa-eye mr-1"></i>1245 views</span
+              <p class="text-sm text-gray-400 mb-3">
+                By
+                <span class="font-medium text-gray-300"
+                  >{{ all_blog.author }}</span
                 >
-                <button class="btn-secondary text-sm">Read More</button>
-              </div>
+                on {{ all_blog.created_day | date:'d M, Y' }}
+              </p>
+              <p
+                class="text-gray-300 text-lg md:text-xl mb-4 flex-grow leading-relaxed"
+              >
+                {{ all_blog.content|truncatewords:30 }}
+              </p>
+            
             </div>
           </div>
-          {% endfor %} 
+          {% endfor %}
         </div>
+        {% else %}
+        <h2 class="font-bold text-center text-gray-400 mt-12">
+          Nothing is here...........
+        </h2>
+        {% endif %}
       </section>
-      
-      {% else %}
-      <h2 class="font-bold">Nothing is here...........</h2>
-      {% endif %}
 
       <!-- "Create New Post" Button -->
-      <button
-        class="btn-primary fixed bottom-6 right-6 flex items-center space-x-2 text-lg"
+      <a
+        href="{% url 'create_post' %}"
+        class="btn-primary fixed bottom-6 right-6 flex items-center space-x-2 text-lg bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg"
       >
-        <a href="{% url 'create_post' %}">
-          <i class="fas fa-plus"></i>
-          <span>Create New Post</span>
-        </a>
-      </button>
+        <i class="fas fa-plus"></i>
+        <span>Create New Post</span>
+      </a>
     </main>
   </body>
 </html>
