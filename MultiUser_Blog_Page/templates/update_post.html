@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Post</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="{% static 'styles/createblog.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Update Your Post</h2>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+          {{form.as_p}} 
+          
+          {% if post.image %}
+          <p>Current Image:</p>
+          <img
+            src="{{ post.image.url }}"
+            alt="Current Image"
+            style="max-height: 200px; margin-top: 10px"
+          />
+          {% endif %}
+        </div>
+
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
