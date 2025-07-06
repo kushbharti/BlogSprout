@@ -39,50 +39,7 @@
 
 <h1>📁 Project Structure</h1>
 
-MultiUser_Blog_Page/     
-│
-├── BlogApp/                     
-│   ├── migrations/         
-│   ├── __init__.py         
-│   ├── admin.py            
-│   ├── apps.py          
-│   ├── forms.py          
-│   ├── models.py     
-│   ├── tests.py        
-│   ├── urls.py          
-│   └── views.py        
-│
-├── media/                   
-│   └── pictures/      
-│
-├── static/                  
-│   └── styles/
-│       ├── blog.css       
-│       ├── login.css     
-│       └── register.css    
-│
-├── templates/                
-│   ├── base.html      
-│   ├── login.html    
-│   ├── register.html   
-│   ├── create_blog.html  
-│   ├── blog_user_post.html   
-│   ├── update_post.html      
-│   └── home.html
-│
-├── MultiUser_Blog_Page/         
-│   ├── __init__.py      
-│   ├── asgi.py      
-│   ├── settings.py    
-│   ├── urls.py  
-│   └── wsgi.py
-│
-├── db.sqlite3   
-├── manage.py  
-├── requirements.txt  
-└── README.md 
-
-
+![Screenshot 2025-07-06 215409](https://github.com/user-attachments/assets/a7258482-839c-4dd3-9eb8-a16d5410453c) <br>
 
 <h3>🐍 Create & Activate Virtual Environment</h3>
 python -m venv env  <br>
