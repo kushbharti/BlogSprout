@@ -40,12 +40,12 @@
 <h1>📁 Project Structure</h1>
 
 MultiUser_Blog_Page/          <br>
-│                            <br>                
+│                                         
 ├── BlogApp/                       # Django app for blog logic   <br>
 │   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
+│   ├── __init__.py                <br>
+│   ├── admin.py                  <br>
+│   ├── apps.py                   <br>
 │   ├── forms.py                  # Django forms (BlogForm)
 │   ├── models.py                 # Blogpost model
 │   ├── tests.py
