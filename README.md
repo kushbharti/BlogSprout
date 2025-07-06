@@ -18,24 +18,6 @@
 
 </b>
 
-🚀 Features
-🔐 User Authentication – Secure registration and login functionality.
-
-✍️ Blog Post Management – Create, update, and delete your own posts.
-
-🖼️ Image Uploads – Attach images to blog posts easily.
-
-🧑‍🤝‍🧑 User Dashboard – View and manage posts specific to each user.
-
-📅 Auto Timestamps – Posts include automatic creation and update times.
-
-📌 SEO-Friendly URLs – Each post gets a unique, slug-based URL.
-
-🎨 Responsive UI – Styled with Tailwind CSS for a modern, mobile-friendly design.
-
-
-
-
 <h3>🔓 Login Page</h3>
 
 ![Screenshot 2025-07-06 180059](https://github.com/user-attachments/assets/6263d707-e992-4994-b6e2-e43af08257ad) <br>
