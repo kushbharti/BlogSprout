@@ -124,3 +124,26 @@ button[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 0 5px rgba(72, 187, 120, 0.6); /* Clearer focus ring */
 }
+
+/* File Input Styling */
+input[type="file"] {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: #2d3748;
+  background-color: #f7fafc; /* Light background for file input */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]:hover {
+  border-color: #a0aec0;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #63b3ed;
+  box-shadow: 0 0 0 4px rgba(99, 179, 237, 0.4);
+}

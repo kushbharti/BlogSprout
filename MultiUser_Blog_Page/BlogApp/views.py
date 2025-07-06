@@ -16,7 +16,7 @@ def user_posts(request):
 
 def create_post(request):
     if request.method == 'POST':
-        form = BlogForm(request.POST)
+        form = BlogForm(request.POST,request.FILES)
         if form.is_valid():
             blog_post = form.save(commit = False)
             blog_post.author = request.user

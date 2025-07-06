@@ -75,11 +75,21 @@
           <div
             class="post-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
           >
+          {% if all_blog.images %}
+          
             <img
-              src="https://placehold.co/400x250/667eea/ffffff?text={{all_blog.title}}"
+              src=" {{all_blog.images.url }} "
+              alt="The Future of AI in Everyday Life"
+              class="w-full h-56 object-cover object-center rounded-t-xl"
+            />
+
+            {% else %}
+               <img
+              src="https://placehold.co/400x250/667eea/ffffff?text={{all_blog.title|truncatewords:3}}"
               alt="The Future of AI in Everyday Life"
               class="w-full h-48 object-cover"
             />
+            {% endif %}
             <div class="p-6 flex-grow flex flex-col">
               <h3 class="text-xl font-semibold mb-2 text-gray-900">
                 {{all_blog.title}}
