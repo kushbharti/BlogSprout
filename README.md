@@ -39,9 +39,9 @@
 
 <h1>📁 Project Structure</h1>
 
-MultiUser_Blog_Page/
-│
-├── BlogApp/                       # Django app for blog logic
+MultiUser_Blog_Page/          <br>
+│                            <br>                
+├── BlogApp/                       # Django app for blog logic   <br>
 │   ├── migrations/
 │   ├── __init__.py
 │   ├── admin.py
@@ -87,7 +87,6 @@ MultiUser_Blog_Page/
 
 
 <h3>🐍 Create & Activate Virtual Environment</h3>
-<br>
 python -m venv env  <br>
 source env/bin/activate  # For macOS/Linux <br>
 .\env\Scripts\activate   # For Windows    <br>
