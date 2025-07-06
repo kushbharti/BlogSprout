@@ -37,24 +37,31 @@
 
 ![Screenshot 2025-07-06 180516](https://github.com/user-attachments/assets/37c2197a-e233-49f0-b96a-a44b4084ac95)<br>
 
-<h3>🐍 Create & Activate Virtual Environment</h3>
-python -m venv env  <br>
-source env/bin/activate  # For macOS/Linux <br>
-.\env\Scripts\activate   # For Windows    <br>
+<h2>💡 Setup Instructions </h2>
+<h3>1. 🔄 Clone the Repo</h3>
+git clone https://github.com/your-username/django-multiuser-blog.git
+cd django-multiuser-blog
 
-<h3>📦 Install Dependencies </h3>
+<h3>2. 🐍 Create & Activate Virtual Environment</h3>
+python -m venv env<br>
+# For macOS/Linux:-
+<b> source env/bin/activate </b>
+# For Windows:-
+.\env\Scripts\activate
+
+<h3>3. 📦 Install Requirements</h3>
 pip install -r requirements.txt
 
-<h3>⚙️ Run Migrations</h3>
+<h3>4. ⚙️ Apply Migrations</h3>
 python manage.py makemigrations
 python manage.py migrate
 
-<h3>▶️ Run the Server</h3>
+<h3>5. ▶️ Start the Server</h3>
 python manage.py runserver
 
-<h3>👤 Create Superuser (Optional)</h3>
+<h3>6. 👑 Create Superuser (Optional)</h3>
 python manage.py createsuperuser
 
-<h1>📁 Project Structure</h1>
+<h2>📁 Project Structure</h2>
 
 ![Screenshot 2025-07-06 215409](https://github.com/user-attachments/assets/a7258482-839c-4dd3-9eb8-a16d5410453c) <br>
